@@ -54,6 +54,10 @@ header {
     font-weight: bold;
 }
 
+/* .result > p {
+    text-transform: uppercase;
+} */
+
 .options {
     text-align: center;
     margin-top: 50px;

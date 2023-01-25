@@ -22,10 +22,10 @@ function computerPicks() {
     return picks[random];
 }
 
-function upperCase(word) {
+function capitalLetters(word){
 
     if (word === "rock") {
-        return word.toUpperCase();
+        return "ROCK";
     } else if (word === "paper") {
         return "PAPER";
     } else if (word === "scissors") {
@@ -35,7 +35,7 @@ function upperCase(word) {
     } else {
         return "SPOCK";
     }
-
+    
 }
 
 function win(userChoice, ComputerChoice) {
@@ -45,7 +45,7 @@ function win(userChoice, ComputerChoice) {
     playerScoreSpan.innerHTML = playerScore;
     ComputerScoreSpan.innerHTML = computerScore;
 
-    resultDiv.innerHTML = userChoice.toUpperCase()  + " beats " + ComputerChoice.toUpperCase()  + " You WIN! &#128512;";
+    resultDiv.innerHTML = `${capitalLetters(userChoice)} beats ${capitalLetters(ComputerChoice)}. You WIN! &#128512;`;
 
 }
 
