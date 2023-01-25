@@ -1,11 +1,11 @@
-const playerScore = 0;
-const computerScore = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 const playerScoreSpan = document.getElementById("player-score");
 const ComputerScoreSpan = document.getElementById("computer-score");
 
 const scoresDiv = document.querySelector(".scores-div");
-const resultDiv = document.querySelector(".result");
+const resultDiv = document.querySelector(".result > p");
 
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
@@ -14,20 +14,46 @@ const lizardDiv = document.getElementById("lizard");
 const spockDiv = document.getElementById("spock");
 
 function computerPicks() {
+
     const picks = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+
     const random = Math.floor(Math.random() * picks.length);
+
     return picks[random];
 }
 
-function win() {
-    playerScore++;
+function upperCase(word) {
+
+    if (word === "rock") {
+        return word.toUpperCase();
+    } else if (word === "paper") {
+        return "PAPER";
+    } else if (word === "scissors") {
+        return "SCISSORS";
+    } else if (word === "lizard") {
+        return "LIZARD";
+    } else {
+        return "SPOCK";
+    }
+
 }
 
-function lose() {
+function win(userChoice, ComputerChoice) {
+
+    playerScore++;
+
+    playerScoreSpan.innerHTML = playerScore;
+    ComputerScoreSpan.innerHTML = computerScore;
+
+    resultDiv.innerHTML = userChoice.toUpperCase()  + " beats " + ComputerChoice.toUpperCase()  + " You WIN! &#128512;";
+
+}
+
+function lose(userChoice, ComputerChoice) {
     console.log("LOSE");
 }
 
-function draw() {
+function draw(userChoice, ComputerChoice) {
     console.log("DRAW");
 }
 
@@ -47,7 +73,7 @@ function game(userChoice) {
         case "paperspock":
         case "spockrock":
         case "rockscissors":
-            win(); 
+            win(userChoice, getComputerPick); 
             break;
 
         case "paperscissors":
@@ -60,7 +86,7 @@ function game(userChoice) {
         case "spockpaper":
         case "rockspock":
         case "scissorsrock":
-            lose(); 
+            lose(userChoice, getComputerPick); 
             break;
 
         case "paperpaper":
@@ -68,7 +94,7 @@ function game(userChoice) {
         case "scissorsscissors":
         case "lizardlizard":
         case "spockspock":
-            draw();
+            draw(userChoice, getComputerPick);
             break;
 
     }
