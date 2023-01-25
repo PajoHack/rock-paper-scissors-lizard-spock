@@ -35,7 +35,7 @@ function capitalLetters(word){
     } else {
         return "SPOCK";
     }
-    
+
 }
 
 function win(userChoice, ComputerChoice) {
@@ -47,14 +47,29 @@ function win(userChoice, ComputerChoice) {
 
     resultDiv.innerHTML = `${capitalLetters(userChoice)} beats ${capitalLetters(ComputerChoice)}. You WIN! &#128512;`;
 
+    document.getElementById(userChoice).classList.add("green-glow"); // grab whichever icon the player selects and add green-glow class to it.
+    setTimeout(() => document.getElementById(userChoice).classList.remove("green-glow"), 1250); // remove the class after the set time-out.
+
 }
 
 function lose(userChoice, ComputerChoice) {
-    console.log("LOSE");
+    computerScore++;
+
+    playerScoreSpan.innerHTML = playerScore;
+    ComputerScoreSpan.innerHTML = computerScore;
+
+    resultDiv.innerHTML = `${capitalLetters(userChoice)} loses to ${capitalLetters(ComputerChoice)}. You LOST! &#128548;`;
+
+    document.getElementById(userChoice).classList.add("red-glow"); // grab whichever icon the player selects and red-glow class to it.
+    setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 1250); // remove the class after the set time-out.
 }
 
 function draw(userChoice, ComputerChoice) {
-    console.log("DRAW");
+
+    playerScoreSpan.innerHTML = playerScore;
+    ComputerScoreSpan.innerHTML = computerScore;
+
+    resultDiv.innerHTML = `${capitalLetters(userChoice)} ties with ${capitalLetters(ComputerChoice)}. It's a DRAW! &#128530;`;
 }
 
 function game(userChoice) {
