@@ -8,6 +8,7 @@
 
 body {
     background-color: #24272E;
+    background-image: url('../images/image-of-outer-space.jpg') no-repeat center center;
 }
 
 header {
@@ -15,6 +16,10 @@ header {
     color: #25272E;
     text-align: center;
     padding: 2rem;
+}
+
+.wrapper {
+    background-image: url('../images/image-of-outer-space.jpg') no-repeat center center;
 }
 
 .scores-div {
@@ -52,33 +57,38 @@ header {
     color: white;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 5rem;
 }
 
-/* .result > p {
-    text-transform: uppercase;
+.main-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* .options {
+    text-align: center;
+    margin: 50px;
 } */
 
-.options {
-    text-align: center;
-    margin-top: 50px;
-}
-
 .option {
-    border: 4px solid white;
-    margin: 0 1.5rem;
-    display: inline-block;
+    
+    /* margin: 0 1.5rem; */
+    /* display: inline-block; */
     transition: all 0.5s ease;
 }
 
 .option > img {
     width: 10rem;
     height: 10rem;
+    border: 4px solid white;
 }
 
-.option:hover {
+.option:hover > img {
     cursor: pointer;
-    border: 10px solid lightskyblue;
-    background: white;
+    border: 5px solid lightskyblue;
+    /* background: white; */
 }
 
 #select-option {
