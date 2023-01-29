@@ -131,13 +131,18 @@ header {
 
 @media screen and (max-width: 950px) {
 
+    header {
+        font-size: .4rem;
+        padding: 1rem;
+    }
+
     .scores-div {
-        border: 5px solid white;
-        border-radius: 5px;
-        margin: 2rem auto;
-        width: 20%;
+        border: 3px solid white;
+        border-radius: 3px;
+        margin: 1.5rem auto;
+        width: 40%;
         color: white;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 1rem;
         position: relative;
@@ -151,14 +156,22 @@ header {
     
     #player-handle {
         position: absolute;
-        top: 35px;
-        left: -35px;
+        top: 15px;
+        left: -50px;
     }
     
     #computer-handle {
         position: absolute;
-        top: 35px;
-        right: -35px;
+        top: 15px;
+        right: -50px;
+    }
+
+    .result {
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
     }
 
     .option > img {
