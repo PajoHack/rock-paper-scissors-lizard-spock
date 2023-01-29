@@ -63,15 +63,9 @@ header {
 .main-grid {
     display: grid;
     gap: 1.5rem;
-    /* place-content: center; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-
-/* .options {
-    text-align: center;
-    margin: 50px;
-} */
 
 .option {
     transition: all 0.5s ease;
@@ -82,8 +76,6 @@ header {
     width: 10rem;
     height: 10rem;
     border: 4px solid white;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .option:hover > img {
@@ -135,4 +127,44 @@ header {
 .red-glow {
     border: 4px solid #fc121b;
     box-shadow: 0 0 30px #d01115;
+}
+
+@media screen and (max-width: 950px) {
+
+    .scores-div {
+        border: 5px solid white;
+        border-radius: 5px;
+        margin: 2rem auto;
+        width: 20%;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+    }
+    
+    .icon {
+        background: #E2584D;
+        font-size: 1rem;
+        padding: 2px 10px;
+    }
+    
+    #player-handle {
+        position: absolute;
+        top: 35px;
+        left: -35px;
+    }
+    
+    #computer-handle {
+        position: absolute;
+        top: 35px;
+        right: -35px;
+    }
+
+    .option > img {
+        width: 5rem;
+        height: 5rem;
+        border: 4px solid white;
+    }
+
 }

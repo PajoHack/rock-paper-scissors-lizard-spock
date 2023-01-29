@@ -60,7 +60,7 @@ function lose(userChoice, ComputerChoice) {
 
     resultDiv.innerHTML = `${capitalLetters(userChoice)} loses to ${capitalLetters(ComputerChoice)}. You LOST! &#128548;`;
 
-    document.getElementById(userChoice).classList.add("red-glow"); // grab whichever icon the player selects and red-glow class to it.
+    document.getElementById(userChoice).classList.add("red-glow"); // grab whichever icon the player selects and add red-glow class to it.
     setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 1250); // remove the class after the set time-out.
 }
 
