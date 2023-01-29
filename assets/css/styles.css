@@ -63,6 +63,7 @@ header {
 .main-grid {
     display: grid;
     gap: 1.5rem;
+    /* place-content: center; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -74,14 +75,15 @@ header {
 
 .option {
     transition: all 0.5s ease;
+    margin: auto;
 }
 
 .option > img {
     width: 10rem;
     height: 10rem;
     border: 4px solid white;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .option:hover > img {
@@ -90,9 +92,14 @@ header {
     /* background: white; */
 }
 
+.option:nth-child(1) {
+    margin-right: 0;
+}
+
 .option:nth-child(2) {
     grid-row-start: 1;
     grid-column-end: 4;
+    margin-left: 0;
 }
 
 .option:nth-child(3) {
@@ -103,11 +110,13 @@ header {
 .option:nth-child(4) {
     grid-row-start: 3;
     grid-column-end: 2;
+    margin-right: 0;
 }
 
 .option:last-child {
     grid-row-start: 3;
     grid-column-end: 4;
+    margin-left: 0;
 }
 
 #select-option {
