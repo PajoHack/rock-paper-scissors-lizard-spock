@@ -13,6 +13,10 @@ const scissorsDiv = document.getElementById("scissors");
 const lizardDiv = document.getElementById("lizard");
 const spockDiv = document.getElementById("spock");
 
+/**
+ * Generates a random computer selection from the array of choices.
+ * 
+ */
 function computerPicks() {
 
     const picks = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
@@ -22,6 +26,10 @@ function computerPicks() {
     return picks[random];
 }
 
+/** 
+ * Returns uppercase word used in the win, lose
+ * draw functions.
+ */
 function capitalLetters(word){
 
     if (word === "rock") {
@@ -38,6 +46,11 @@ function capitalLetters(word){
 
 }
 
+/**  
+ * Increments the player score and displays the "You WIN!" statement on the 
+ * screen in the result div. Also adds and then removes the "green-glow" class on 
+ * the selected icon.
+ */
 function win(userChoice, ComputerChoice) {
 
     playerScore++;
@@ -52,6 +65,11 @@ function win(userChoice, ComputerChoice) {
 
 }
 
+/**  
+ * Increments the computer score and displays the "You LOST!" statement on the 
+ * screen in the result div. Also adds and then removes the "red-glow" class on 
+ * the selected icon.
+ */
 function lose(userChoice, ComputerChoice) {
     computerScore++;
 
@@ -64,6 +82,9 @@ function lose(userChoice, ComputerChoice) {
     setTimeout(() => document.getElementById(userChoice).classList.remove("red-glow"), 1250); // remove the class after the set time-out.
 }
 
+/**  
+ * Displays "It's a DRAW!" in the result div.
+ */
 function draw(userChoice, ComputerChoice) {
 
     playerScoreSpan.innerHTML = playerScore;
@@ -72,6 +93,9 @@ function draw(userChoice, ComputerChoice) {
     resultDiv.innerHTML = `${capitalLetters(userChoice)} ties with ${capitalLetters(ComputerChoice)}. It's a DRAW! &#128530;`;
 }
 
+/**  
+ * Switch construct containing ever possible outcome of the game.
+ */
 function game(userChoice) {
 
     const getComputerPick = computerPicks();
@@ -116,6 +140,9 @@ function game(userChoice) {
     
 }
 
+/**  
+ * Event listeners for when the player clicks on one of the icons.
+ */
 function mainGame() {
 
     rockDiv.addEventListener('click', function() {

@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Interactive rock, paper,scissors, lizard, spock game">
-    <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, JavaScript">
-    <meta name="author" content="Patrick Hackman">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock Paper Scissors Lizard Spock</title>
-</head>
-<body>
 
-    <header>
-        <h1>
-            Rock <i class="fa-regular fa-hand-back-fist"></i> - 
-            Paper <i class="fa-regular fa-hand"></i> -  
-            Scissors <i class="fa-regular fa-hand-scissors"></i> - 
-            Lizard <i class="fa-regular fa-hand-lizard"></i> - 
-            Spock <i class="fa-regular fa-hand-spock"></i>  
-        </h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Interactive rock, paper,scissors, lizard, spock game">
+        <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, JavaScript">
+        <meta name="author" content="Patrick Hackman">
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Rock Paper Scissors Lizard Spock</title>
+    </head>
 
-    <div class="scores-div">
-        <div id="player-handle" class="icon">Player</div>
-        <div id="computer-handle" class="icon">Comp</div>
-        <span id="player-score">0</span> : <span id="computer-score">0</span>
-    </div>
-    
-    <div class="result">
-        <p class="">Your Move &#128526;</p>
-    </div>
+    <body>
 
-    <main class="main-grid">
+        <!-- the header element which contains the game title and fontawesome icons -->
 
-            <div id="rock" class="option">
-                <img src="assets/images/rock.png" alt="">
-            </div>
+        <header>
+
+            <h1>
+                Rock <i class="fa-regular fa-hand-back-fist"></i> - 
+                Paper <i class="fa-regular fa-hand"></i> -  
+                Scissors <i class="fa-regular fa-hand-scissors"></i> - 
+                Lizard <i class="fa-regular fa-hand-lizard"></i> - 
+                Spock <i class="fa-regular fa-hand-spock"></i>  
+            </h1>
+
+        </header>
+
+        <!-- the scores div displays the scoreboard and icons for the player and computer -->
+
+        <div class="scores-div">
+
+            <div id="player-handle" class="icon">Player</div>
+            <div id="computer-handle" class="icon">Comp</div>
+            <span id="player-score">0</span> : <span id="computer-score">0</span>
+
+        </div>
         
+        <!-- the result div displays a message on the outcome of the player selection --> 
 
-            <div id="paper" class="option">
-                <img src="assets/images/paper.png" alt="">
-            </div>
+        <div class="result">
+
+            <p class="">Your Move &#128526;</p>
+
+        </div>
+
+        <!-- the main element contains 5 divs containing each clickable icons -->
         
+        <main class="main-grid">
+
+                <div id="rock" class="option">
+                    <img src="assets/images/rock.png" alt="An image of a hand in a rock pose with the word rock underneath ">
+                </div>
             
-            <div id="scissors" class="option">
-                <img src="assets/images/scissors.png" alt="">
-            </div>
-        
 
-            <div id="lizard" class="option">
-                <img src="assets/images/lizzard.png" alt="">
-            </div>
+                <div id="paper" class="option">
+                    <img src="assets/images/paper.png" alt="An image of a hand in a paper pose with the word paper underneath">
+                </div>
             
-            <div id="spock" class="option">
-                <img src="assets/images/spock.png" alt="">
-            </div>
+                
+                <div id="scissors" class="option">
+                    <img src="assets/images/scissors.png" alt="An image of a hand in a scissers pose with the word scissors underneath">
+                </div>
+            
 
-    </main>
+                <div id="lizard" class="option">
+                    <img src="assets/images/lizzard.png" alt="An image of a hand in a lizard pose with the word lizard underneath">
+                </div>
+                
+                <div id="spock" class="option">
+                    <img src="assets/images/spock.png" alt="An image of a hand in a spock pose with the word spock underneath">
+                </div>
 
-    <!-- <p id="select-option">Choose wisely my friend</p> -->
+        </main>
 
-    <script src="https://kit.fontawesome.com/da855886f2.js" crossorigin="anonymous"></script>
+        <!-- fontawesome link and custom script file -->
 
-    <script src="assets/js/script.js"></script>
-    
-</body>
+        <script src="https://kit.fontawesome.com/da855886f2.js" crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
+        
+    </body>
+
 </html>
