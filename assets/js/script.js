@@ -147,23 +147,23 @@ function mainGame() {
 
     rockDiv.addEventListener('click', function() {
         game("rock");
-    })
+    });
     
     paperDiv.addEventListener('click', function() {
         game("paper");
-    })
+    });
     
     scissorsDiv.addEventListener('click', function() {
         game("scissors");
-    })
+    });
     
     lizardDiv.addEventListener('click', function() {
         game("lizard");
-    })
+    });
     
     spockDiv.addEventListener('click', function() {
         game("spock");
-    })
+    });
 
 }
 
