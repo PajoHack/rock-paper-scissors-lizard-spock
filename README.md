@@ -2,7 +2,7 @@
 
 # Rock Paper Scissors Lizard Spock
 
-This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chosses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game.
+This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chooses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game.
 
 The game is targeted towards individuals interested in interactive games and web development.
 
