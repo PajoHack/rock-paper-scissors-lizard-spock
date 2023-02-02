@@ -15,7 +15,7 @@
 
 body {
     background-color: #24272E;
-    background-image: url('../images/image-of-outer-space.jpg');
+    background-image: url('../images/colored-shapes.png');
 }
 
 /* rules for the header element */
@@ -27,7 +27,13 @@ header {
     padding: 2rem;
 }
 
-/* rules for the modal */
+#refresh:hover {
+    cursor: pointer;
+    color: green;
+}
+
+/* rules for the modal taken from W3Schools example https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal */
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -65,6 +71,12 @@ header {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  #myBtn {
+    background-color: #25272E;
+    color: white;
+    margin-bottom: 2rem;
   }
 
 /* rules for the scoreboard area */
@@ -119,7 +131,7 @@ header {
 
 .main-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
