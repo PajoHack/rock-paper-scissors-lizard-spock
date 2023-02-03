@@ -56,6 +56,8 @@ header {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
   
   /* The Close Button */
@@ -77,6 +79,11 @@ header {
     background-color: #25272E;
     color: white;
     margin-bottom: 2rem;
+    padding: .3rem;
+  }
+
+  #myBtn:hover {
+    background-color: #31b43a;
   }
 
 /* rules for the scoreboard area */
