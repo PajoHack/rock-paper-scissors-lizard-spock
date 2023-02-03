@@ -8,13 +8,15 @@ The game is targeted towards individuals interested in interactive games and web
 
 The goal of this project is to provide a fun and entertaining game which is not too complicated to play.
 
-![Screenshot from https://ui.dev/amiresponsive](documentation/am-i-responsive.png)
+![Screenshot from https://ui.dev/amiresponsive](documentation/responsive-screenshot.png)
 
 ## Features
 
 - Header
 
    - The header area contains a heading with the name of the game along with fontawesome icons.
+   - The "Open Rules" button displays a modal showing the rules of the game. Clicking the x icon or anywhere outside of the modal, closes the modal.
+   - Clicking the refresh icon re-loads the page and re-starts the game.
 
 <br>
 
@@ -49,20 +51,37 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
 - functionality
 
-| Test Label       | Test   Action  | Expected   Outcome                                                                 | Test   Outcome |
-|------------------|----------------|------------------------------------------------------------------------------------|----------------|
-| Rock   image     | Select   image | The   border of the image turns lightblue                                          | PASS           |
-| Rock image       | Select image   | Player wins and a green border and shadow   are shown around the image temperarily | PASS           |
-| Rock   image     | Select   image | Computer   wins and a red border and shadow are shown around the image temperarily | PASS           |
-| Paper image      | Select image   | The border of the image turns lightblue                                            | Pass           |
-| Paper   image    | Select   image | Player   wins and a green border and shadow are shown around the image temperarily | PASS           |
-| Paper image      | Select image   | Computer wins and a red border and shadow   are shown around the image temperarily | PASS           |
-| Scissors   image | Select   image | The   border of the image turns lightblue                                          | PASS           |
-| Scissors image   | Select image   | Player wins and a green border and shadow   are shown around the image temperarily | PASS           |
-| Scissors   image | Select   image | Computer   wins and a red border and shadow are shown around the image temperarily | PASS           |
-| Lizard image     | Select image   | The border of the image turns lightblue                                            | PASS           |
-| Lizard   image   | Select   image | Player   wins and a green border and shadow are shown around the image temperarily | PASS           |
-| Lizard image     | Select image   | Computer wins and a red border and shadow   are shown around the image temperarily | PASS           |
-| Spock   image    | Select   image | The   border of the image turns lightblue                                          | PASS           |
-| Spock image      | Select image   | Player wins and a green border and shadow   are shown around the image temperarily | PASS           |
-| Spock image      | Select   image | Computer   wins and a red border and shadow are shown around the image temperarily | PASS           |
+| Test Label       | Test Action    | Expected Outcome                                                                   | Test Outcome |
+|------------------|----------------|------------------------------------------------------------------------------------|--------------|
+| Rules   button   | Click   button | Modal   opens displaying the rules of the game                                     | PASS         |
+| X icon           | Click icon     | Modal closes                                                                       | PASS         |
+| Refresh   icon   | Click   icon   | Page   is re-loaded                                                                | PASS         |
+| Rock image       | Select image   | The border of the image turns lightblue                                            | PASS         |
+| Rock   image     | Select   image | Player   wins and a green border and shadow are shown around the image temperarily | PASS         |
+| Rock image       | Select image   | Computer wins and a red border and shadow   are shown around the image temperarily | PASS         |
+| Paper   image    | Select   image | The   border of the image turns lightblue                                          | Pass         |
+| Paper image      | Select image   | Player wins and a green border and shadow   are shown around the image temperarily | PASS         |
+| Paper   image    | Select   image | Computer   wins and a red border and shadow are shown around the image temperarily | PASS         |
+| Scissors image   | Select image   | The border of the image turns lightblue                                            | PASS         |
+| Scissors   image | Select   image | Player   wins and a green border and shadow are shown around the image temperarily | PASS         |
+| Scissors image   | Select image   | Computer wins and a red border and shadow   are shown around the image temperarily | PASS         |
+| Lizard   image   | Select   image | The   border of the image turns lightblue                                          | PASS         |
+| Lizard image     | Select image   | Player wins and a green border and shadow   are shown around the image temperarily | PASS         |
+| Lizard   image   | Select   image | Computer   wins and a red border and shadow are shown around the image temperarily | PASS         |
+| Spock image      | Select image   | The border of the image turns lightblue                                            | PASS         |
+| Spock   image    | Select   image | Player   wins and a green border and shadow are shown around the image temperarily | PASS         |
+| Spock image      | Select image   | Computer wins and a red   border and shadow are shown around the image temperarily | PASS         |
+
+<br>
+
+- Browser Compatibility
+
+   - The website was tested in different browsers and works well in each one.
+   - Browsers used: Chrome, FireFox, Edge & Safari.
+
+<br>
+
+- Responsivness
+
+   - I used Google Developer tools to check the responsiveness of the site on different screen sizes. The site responded well to very large screens such as iMac Pro, medium screens such as iPad Pro and very small screens such as iPhone SE.
+   - On smaller screens the font-size and the images are reduced in size to ensure everything is visable and viable.
