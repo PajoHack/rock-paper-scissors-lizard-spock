@@ -8,6 +8,8 @@ The game is targeted towards individuals interested in interactive games and web
 
 The goal of this project is to provide a fun and entertaining game which is not too complicated to play.
 
+[View the live project here](https://pajohack.github.io/rock-paper-scissors-lizard-spock/)
+
 ![Screenshot from https://ui.dev/amiresponsive](documentation/responsive-screenshot.png)
 
 ## Features
@@ -85,3 +87,62 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
    - I used Google Developer tools to check the responsiveness of the site on different screen sizes. The site responded well to very large screens such as iMac Pro, medium screens such as iPad Pro and very small screens such as iPhone SE.
    - On smaller screens the font-size and the images are reduced in size to ensure everything is visable and viable.
+
+<br>
+
+- Validation
+
+  - HTML. After using the W3C validator, no errors were found.
+  - CSS. After using Jigsaw validator, no ES6 errors were present.
+  - The Javascript was run through jshint, no warnings were given
+  - Accessibility. I confirmed that the site meets the required needs by using lighthouse to validate.
+
+<br>
+
+![Lighthouse screenshot](documentation/lighthouse-report.png)
+
+<br>
+
+## Bugs
+
+- Squashed Bugs
+
+   - On smaller screens the game icons were not shown on the screen. Adding a media query rule to reduce the size solved the problem.
+   - I originally had a background image that did not contrast with the game area and was distracting. It was an image of outter space. I replaced it with a cleaner looking background which compliments the game area.
+
+- Unfixed Bugs
+
+   - There are no unfixed bugs that I can find.
+
+<br>
+
+## Deployment
+
+- The site was deployed via GitHub Pages. This is achieved through your GitHub repository by clicking on settings and selecting "Pages" in the code and automation section. Under the "Build and deployment" heading use deploy from a branch option. Then, under the "Branch" heading, select master branch. After a few moments a link to the live project is created and available to browse and share. 
+
+- Any alterations made to the files can be pushed to GitHub with the "git push" command in the terminal. GitHub Pages picks up the changes and updates the live site after a moment or two.
+
+- Users can download a copy of the files in this project to their local computer by cloning the repository. There are three ways of doing this, download a Zip, use SSH or using HTTPS.
+
+- [View the live project here](https://pajohack.github.io/rock-paper-scissors-lizard-spock/)
+
+<br>
+
+## Credits
+
+- Content
+
+   - I took inspiration for my game after watching this tutorial on YouTube, [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0&list=PLuPRotimWN7P4ahbxERol7yWIInp8loeA&index=25)
+   - The background image was taken from [BGJar](https://bgjar.com/colored-shapes)
+   - I found images for the game icons here [Open Clip-art](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock)
+
+<br>
+
+## Technologies & Tools Used
+
+<br>
+
+- HTML5
+- CSS3
+- JavaScript
+- Fontawesome

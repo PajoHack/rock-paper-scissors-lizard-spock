@@ -224,7 +224,7 @@ header {
 
 /* Media query for mobile screens */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
     header {
         font-size: .3rem;

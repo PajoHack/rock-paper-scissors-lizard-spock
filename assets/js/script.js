@@ -1,10 +1,13 @@
-let playerScore = 0;
-let computerScore = 0;
+/*jshint esversion: 6 */
+
+// take the player & computer variables out of the global scope
+
+let { playerScore, computerScore } = playerVars();
 
 const playerScoreSpan = document.getElementById("player-score");
 const ComputerScoreSpan = document.getElementById("computer-score");
 
-const scoresDiv = document.querySelector(".scores-div");
+// const scoresDiv = document.querySelector(".scores-div");
 const resultDiv = document.querySelector(".result > p");
 
 const rockDiv = document.getElementById("rock");
@@ -13,6 +16,18 @@ const scissorsDiv = document.getElementById("scissors");
 const lizardDiv = document.getElementById("lizard");
 const spockDiv = document.getElementById("spock");
 
+/**  
+ * returns the payer and computer variables
+ */
+function playerVars() {
+    let playerScore = 0;
+    let computerScore = 0;
+    return { playerScore, computerScore };
+}
+
+/**  
+ * refreshes the page when the refresh icon is clicked 
+ */
 function refreshPage(){
     location.reload();
 }
@@ -29,6 +44,8 @@ function computerPicks() {
 
     return picks[random];
 }
+
+// there are more efficient ways to capitalize letters but I wanted to show my understanding of if else constructs
 
 /** 
  * Returns uppercase word used in the win, lose
@@ -98,7 +115,7 @@ function draw(userChoice, ComputerChoice) {
 }
 
 /**  
- * Switch construct containing ever possible outcome of the game.
+ * Switch construct containing every possible outcome of the game.
  */
 function game(userChoice) {
 
@@ -145,7 +162,7 @@ function game(userChoice) {
 }
 
 /**  
- * Event listeners for when the player clicks on one of the icons.
+ * Event listeners for when the player clicks on one of the game icons.
  */
 function mainGame() {
 
@@ -170,34 +187,35 @@ function mainGame() {
     });
 
 }
+ // calling the mainGame function
 
 mainGame();
 
 // modal script taken from W3School example https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 
-// Get the modal
-let modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-let btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+modalFunction();
   
+function modalFunction() {
+    let modal = document.getElementById("myModal");
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+}
+
