@@ -2,7 +2,7 @@
 
 # Rock Paper Scissors Lizard Spock
 
-This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chooses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game.
+This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chooses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard, or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game.
 
 The game is targeted towards individuals interested in interactive games and web development.
 
@@ -16,7 +16,7 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
 - Header
 
-   - The header area contains a heading with the name of the game along with fontawesome icons.
+   - The header area contains a heading with the name of the game along with fontawesome icon that changes every two seconds.
    - The "Open Rules" button displays a modal showing the rules of the game. Clicking the x icon or anywhere outside of the modal, closes the modal.
    - Clicking the refresh icon re-loads the page and re-starts the game.
 
@@ -25,16 +25,16 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Scoreboard
 
    - The scoreboard area displays the player & computer scores.
-   - It contains a player and a computer badge at either side so you can, at a glance differentiate between the two.
+   - It contains a player and a computer badge on each side so you can, at a glance differentiate between the two.
 
 <br>
 
 - Result
 
    - The results area displays the outcome after each round of the game.
-   - At the start of the game, "Your Move" is displayed.
+   - At the start of the game, "Your Move 😎 Select an icon to begin" is displayed.
    - If the player wins, the outcome of the match is shown with the message "You WIN!".
-   - if the computer wins, the outcome of the match is shown with the message "You LOST!".
+   - If the computer wins, the outcome of the match is shown with the message "You LOST!".
    - When the outcome is tied, a message with "It's a DRAW!" is shown.
 
 <br>
@@ -42,10 +42,10 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Game area
 
    - The game area contains five icons representing the five possible options.
-   - When an icon is hovered over or tapped, a lightbluse border appears to give feedback that this is the option selected or about to be selected.
-   - If the player wins the round, a green border and shadow appears around the icon indicating a win.
-   - If the computer wins the round, a red border and shadow appears around the image indicating a lose.
-   - If both the player and computer select the same option, the border is unchanged but the outcome of a draw is displayed in the results area.
+   - When an icon is hovered over or tapped, a lightblue border appears to give feedback that this is the option selected or about to be selected.
+   - If the player wins the round, a green outline and shadow appears around the icon indicating a win.
+   - If the computer wins the round, a red outline and shadow appears around the image indicating a lose.
+   - If both the player and computer select the same option, the border is unchanged, but the outcome of a draw is displayed in the results area.
 
 <br>
 
@@ -86,15 +86,15 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Responsivness
 
    - I used Google Developer tools to check the responsiveness of the site on different screen sizes. The site responded well to very large screens such as iMac Pro, medium screens such as iPad Pro and very small screens such as iPhone SE.
-   - On smaller screens the font-size and the images are reduced in size to ensure everything is visable and viable.
+   - On smaller screens the font-size and the images are reduced in size to ensure everything is visible and viable.
 
 <br>
 
 - Validation
 
   - HTML. After using the W3C validator, no errors were found.
-  - CSS. After using Jigsaw validator, no ES6 errors were present.
-  - The Javascript was run through jshint, no warnings were given
+  - CSS. After using Jigsaw validator, errors were present.
+  - The Javascript was run through jshint, no ES6 warnings were given.
   - Accessibility. I confirmed that the site meets the required needs by using lighthouse to validate.
 
 <br>
@@ -108,7 +108,7 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Squashed Bugs
 
    - On smaller screens the game icons were not shown on the screen. Adding a media query rule to reduce the size solved the problem.
-   - I originally had a background image that did not contrast with the game area and was distracting. It was an image of outter space. I replaced it with a cleaner looking background which compliments the game area.
+   - I originally had a background image that did not contrast with the game area and was distracting. It was an image of outer space. I replaced it with a cleaner looking background which compliments the game area.
 
 - Unfixed Bugs
 
@@ -122,7 +122,8 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
 - Any alterations made to the files can be pushed to GitHub with the "git push" command in the terminal. GitHub Pages picks up the changes and updates the live site after a moment or two.
 
-- Users can download a copy of the files in this project to their local computer by cloning the repository. There are three ways of doing this, download a Zip, use SSH or using HTTPS.
+- Users can download a copy of the files in this project to their local computer by cloning the repository. There are three ways of doing this, download a Zip, use SSH or, using HTTPS.
+- You can also fork the repository to your personal GitHub. This is done by clicking the fork button on the top-right hand corner. 
 
 - [View the live project here](https://pajohack.github.io/rock-paper-scissors-lizard-spock/)
 

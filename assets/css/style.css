@@ -11,9 +11,16 @@
     font-family: Asap, sans-serif;
 }
 
+/* root variables */
+
+:root {
+    --content-max-width: 2560px;
+}
+
 /* rules for the body element */
 
 body {
+    max-width: var(--content-max-width);
     background-color: #24272E;
     background-image: url('../images/colored-shapes.png');
 }
@@ -27,6 +34,8 @@ header {
     padding: 2rem;
 }
 
+/* refresh icon */
+
 #refresh:hover {
     cursor: pointer;
     color: green;
@@ -37,17 +46,17 @@ header {
 /* The Modal (background) */
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
   
 /* Modal Content */
@@ -199,14 +208,14 @@ header {
 /* adds a green shadow to the icon if it wins */
 
 .green-glow {
-    border: 4px solid #4dcc7d;
+    outline: 4px solid #4dcc7d;
     box-shadow: 10px 10px 20px #31b43a;
 }
 
 /* adds a red shadow to the icon if it loses */
 
 .red-glow {
-    border: 4px solid #fc121b;
+    outline: 4px solid #fc121b;
     box-shadow: 10px 10px 20px #d01115;
 }
 
@@ -227,8 +236,8 @@ header {
 @media screen and (max-width: 950px) {
 
     header {
-        font-size: .3rem;
-        padding: .5rem;
+        font-size: 1rem;
+        padding: .3rem;
     }
 
     .scores-div {
