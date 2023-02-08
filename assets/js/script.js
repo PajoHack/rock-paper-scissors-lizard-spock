@@ -197,7 +197,7 @@ function game(userChoice) {
 
     case "paperscissors":
     case "rockpaper":
-    case "spocklizzard":
+    case "spocklizard":
     case "spocklizard":
     case "scissorsspock":
     case "lizardscissors":

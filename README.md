@@ -12,13 +12,37 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
 ![Screenshot from https://ui.dev/amiresponsive](documentation/responsive-screenshot.png)
 
+## User Experience (UX)
+
+- User Stories
+
+   - ### First Time Visitor Goals
+
+     1. As a first time visitor, at a glance, I want to understand what this site represents.
+     2. As a first time visitor, I want to easily check the rules of the game.
+     3. As a first time visitor, I want the game area and icons to be at the forefront.
+     4. As a first time visitor, I want the ability to refresh the screen and restart the game.
+     5. As a first time visitor, I want the look and feel of the game to be the same experience regardless of the screen I'm currently using.
+     6. As a first time visitor, I need to see a scoreboard displaying mine and the computer's scores.
+
+   - ### Returning Visitor Goals
+
+     1. As a Returning Visitor, I want to have another go at the game as I enjoyed it.
+     2. As a Returning Visitor, I want to see if any new features have been added.
+     3. As a Returning Visitor, I'm hoping to get to a new target score before the computer does.
+
 ## Features
 
 - Header
 
    - The header area contains a heading with the name of the game along with fontawesome icon that changes every two seconds.
    - The "Open Rules" button displays a modal showing the rules of the game. Clicking the x icon or anywhere outside of the modal, closes the modal.
+   - There is a link in the modal to a Big-Bang Theory wiki page.
    - Clicking the refresh icon re-loads the page and re-starts the game.
+
+<br>
+
+![Clicking the modal displays the rules of the game](documentation/rules-of-the-game.png)
 
 <br>
 
@@ -134,8 +158,8 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Content
 
    - I took inspiration for my game after watching this tutorial on YouTube, [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0&list=PLuPRotimWN7P4ahbxERol7yWIInp8loeA&index=25)
-   - The background image was taken from [BGJar](https://bgjar.com/colored-shapes)
    - I found images for the game icons here [Open Clip-art](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock)
+   - The majority of the code for the modal was taken from [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
 
 <br>
 
