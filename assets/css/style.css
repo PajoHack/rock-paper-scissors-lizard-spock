@@ -15,7 +15,6 @@
 body {
     max-width: var(--content-max-width);
     background-color: #0E2A47;
-    /* background-image: url('../images/colored-shapes.png'); */
 }
 /* rules for the header element */
 header {

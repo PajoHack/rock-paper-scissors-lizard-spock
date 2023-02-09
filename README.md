@@ -37,21 +37,23 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
    - The header area contains a heading with the name of the game along with fontawesome icon that changes every two seconds.
    - The "Open Rules" button displays a modal showing the rules of the game. Clicking the x icon or anywhere outside of the modal, closes the modal.
-   - There is a link in the modal to a Big-Bang Theory wiki page.
+   - There is a link in the modal to a Big-Bang Theory wiki page, in case the player wants to read more about the origin of the game.
    - Clicking the refresh icon re-loads the page and re-starts the game.
 
 <br>
 
-![Clicking the modal displays the rules of the game](documentation/rules-of-the-game.png)
+#### Screenshot of the game rules.
 
-<br>
+![Clicking the modal displays the rules of the game](documentation/rules-of-the-game.png)
 
 - Scoreboard
 
    - The scoreboard area displays the player & computer scores.
    - It contains a player and a computer badge on each side so you can, at a glance differentiate between the two.
 
-<br>
+#### Screenshot of the scoreboard area
+
+![Clicking the modal displays the rules of the game](documentation/scoreboard.png)
 
 - Result
 
@@ -61,7 +63,9 @@ The goal of this project is to provide a fun and entertaining game which is not 
    - If the computer wins, the outcome of the match is shown with the message "You LOST!".
    - When the outcome is tied, a message with "It's a DRAW!" is shown.
 
-<br>
+#### Result of the round is shown here
+
+![Clicking the modal displays the rules of the game](documentation/result-of-the-round.png)
 
 - Game area
 
@@ -71,7 +75,9 @@ The goal of this project is to provide a fun and entertaining game which is not 
    - If the computer wins the round, a red outline and shadow appears around the image indicating a lose.
    - If both the player and computer select the same option, the border is unchanged, but the outcome of a draw is displayed in the results area.
 
-<br>
+#### Game are & clickable icons
+
+![Clicking the modal displays the rules of the game](documentation/game-area.png)
 
 ## Testing
 
@@ -125,8 +131,6 @@ The goal of this project is to provide a fun and entertaining game which is not 
 
 ![Lighthouse screenshot](documentation/lighthouse-report.png)
 
-<br>
-
 ## Bugs
 
 - Squashed Bugs
@@ -137,8 +141,6 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Unfixed Bugs
 
    - There are no unfixed bugs that I can find.
-
-<br>
 
 ## Deployment
 
@@ -161,11 +163,7 @@ The goal of this project is to provide a fun and entertaining game which is not 
    - I found images for the game icons here [Open Clip-art](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock)
    - The majority of the code for the modal was taken from [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
 
-<br>
-
 ## Technologies & Tools Used
-
-<br>
 
 - HTML5
 - CSS3
