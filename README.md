@@ -2,9 +2,11 @@
 
 # Rock Paper Scissors Lizard Spock
 
-This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chooses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard, or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game.
+This project is based on the game of chance called “Rock, Paper, Scissors, Lizard, Spock”. The game itself is an expanded version of the classic “Rock, Paper, Scissors” game. The game is easy to play. The player chooses ones of the options by clicking on any of the five icons representing Rock, Paper, Scissors, Lizard, or Spock. Then the computer makes a random selection and the winner is determined by the rules of the game. Playing versus the computer is statistically more likely to produce a definitive result over playing against a family member or friend as you can't second guess which option the computer will pick.
 
 The game is targeted towards individuals interested in interactive games and web development.
+
+It can also be used as a decision making game.
 
 The goal of this project is to provide a fun and entertaining game which is not too complicated to play.
 
@@ -165,8 +167,11 @@ The goal of this project is to provide a fun and entertaining game which is not 
 - Content
 
    - I took inspiration for my game after watching this tutorial on YouTube, [freeCodeCamp.org](https://www.youtube.com/watch?v=jaVNP3nIAv0&list=PLuPRotimWN7P4ahbxERol7yWIInp8loeA&index=25)
-   - I found images for the game icons here [Open Clip-art](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock)
    - The majority of the code for the modal was taken from [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
+
+- Media
+
+   - I found images for the game icons here [Open Clip-art](https://openclipart.org/detail/325665/rock-paper-scissors-lizard-spock)
 
 ## Technologies & Tools Used
 

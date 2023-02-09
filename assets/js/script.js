@@ -175,6 +175,9 @@ function draw(userChoice, ComputerChoice) {
   )} ties with ${capitalLetters(ComputerChoice)}. It's a DRAW! &#128530;`;
 }
 
+// the switch idea was taken and then adapted from this freeCodeCamp.org tutorial
+// https://www.youtube.com/watch?v=jaVNP3nIAv0&list=PLuPRotimWN7P4ahbxERol7yWIInp8loeA&index=25
+
 /**
  * Switch construct containing every possible outcome of the game.
  */
