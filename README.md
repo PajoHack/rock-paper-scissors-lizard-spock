@@ -75,9 +75,14 @@ The goal of this project is to provide a fun and entertaining game which is not 
    - If the computer wins the round, a red outline and shadow appears around the image indicating a lose.
    - If both the player and computer select the same option, the border is unchanged, but the outcome of a draw is displayed in the results area.
 
-#### Game are & clickable icons
+#### Game area & clickable icons
 
 ![Clicking the modal displays the rules of the game](documentation/game-area.png)
+
+## Future Features
+
+- Add an optional time limit function where the user can choose the length of the game play.
+- Add a final score modal to compliment the time limit feature.
 
 ## Testing
 
