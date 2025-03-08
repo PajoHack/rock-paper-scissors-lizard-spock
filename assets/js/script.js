@@ -249,5 +249,15 @@ function modalFunction() {
   };
 }
 
+// Restart Button Logic
+document.getElementById("restart-btn").addEventListener("click", function () {
+  playerScore = 0;
+  computerScore = 0;
+  
+  playerScoreSpan.innerHTML = playerScore;
+  computerScoreSpan.innerHTML = computerScore;
+
+  resultDiv.innerHTML = "Your Move &#128526; Select an icon to begin";
+});
 
 
