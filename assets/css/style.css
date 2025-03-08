@@ -199,6 +199,22 @@ header {
     background-color: #31b43a; /* Matches hover effect of rules button */
 }
 
+/* Add spacing between Restart Button & Result Div */
+.result {
+    margin-top: 2.5rem; /* Increases space between the button and result message */
+}
+/* Default button text (Restart Game) */
+#restart-btn::after {
+    content: " Game";
+}
+
+/* Change text to just "Restart" on mobile screens */
+@media screen and (max-width: 600px) {
+    #restart-btn::after {
+        content: "";
+    }
+}
+
 /* media query for laptops */
 @media screen and (max-width: 1550px) {
     .option > img {
